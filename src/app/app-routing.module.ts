@@ -9,7 +9,7 @@ import { ConfirmComponent } from './components/confirm/confirm.component';
 const routes: Routes = [
     {path: '', redirectTo: '', pathMatch: 'full'},
     {
-        path: 'findFLights',
+        path: 'findFlights',
         component: FindFlightsComponent
     },
     {

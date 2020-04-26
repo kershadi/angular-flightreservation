@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'flightReservation';
+
+  constructor(private router: Router) {
+ }
+
+
+  public goToFindFlights() {
+    console.log('in app.component.ts');
+    this.router.navigate(['/findFlights']/*, { replaceUrl: true }*/);
+  }
 }

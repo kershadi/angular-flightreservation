@@ -6,8 +6,11 @@ import {map} from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ReservationService {
-  flightUrl = 'http://localhost:8080/flightservices/flights';
-  reservationUrl = 'http://localhost:8080/flightservices/reservations';
+  //flightUrl = 'http://localhost:8080/flightservices/flights';
+  //reservationUrl = 'http://localhost:8080/flightservices/reservations';
+  flightUrl = 'http://ec2-35-183-131-244.ca-central-1.compute.amazonaws.com:3000/flightservices/flights';
+  reservationUrl = 'http://ec2-35-183-131-244.ca-central-1.compute.amazonaws.com:3000/flightservices/reservations';
+  
   public flightData: any;
 
   constructor(private http: Http) {}

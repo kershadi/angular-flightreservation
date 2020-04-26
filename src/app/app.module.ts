@@ -28,6 +28,7 @@ import {FormsModule} from '@angular/forms';
     FormsModule
   ],
   providers: [ReservationService],
-  bootstrap: [FindFlightsComponent]
+  bootstrap: [AppComponent]
+  // bootstrap: [FindFlightsComponent]
 })
 export class AppModule { }
